@@ -1,0 +1,35 @@
+v1.0.1:
+    - 'Initialize plugin'
+v1.0.2:
+    - 'Created table danielbecerra_ajustes_departamentos'
+    - builder_table_create_danielbecerra_ajustes_departamentos.php
+v1.0.3:
+    - 'Created table danielbecerra_ajustes_ciudades'
+    - builder_table_create_danielbecerra_ajustes_ciudades.php
+v1.0.4:
+    - 'Created table danielbecerra_ajustes_estados_categorias'
+    - builder_table_create_danielbecerra_ajustes_estados_categorias.php
+v1.0.5:
+    - 'Created table danielbecerra_ajustes_estados_items'
+    - builder_table_create_danielbecerra_ajustes_estados_items.php
+v1.0.6:
+    - 'Updated table danielbecerra_ajustes_estados_items'
+    - builder_table_update_danielbecerra_ajustes_estados_items.php
+v1.0.7:
+    - 'Updated table danielbecerra_ajustes_estados_items'
+    - builder_table_update_danielbecerra_ajustes_estados_items_2.php
+v1.0.8:
+    - 'Updated table danielbecerra_ajustes_estados_items'
+    - builder_table_update_danielbecerra_ajustes_estados_items_3.php
+v1.0.9:
+    - 'Updated table danielbecerra_ajustes_estados_categorias'
+    - builder_table_update_danielbecerra_ajustes_estados_categorias.php
+v1.0.10:
+    - 'Updated table danielbecerra_ajustes_estados_categorias'
+    - builder_table_update_danielbecerra_ajustes_estados_categorias_2.php
+v1.0.11:
+    - 'Updated table danielbecerra_ajustes_estados_categorias'
+    - builder_table_update_danielbecerra_ajustes_estados_categorias_3.php
+v1.0.12:
+    - 'Updated table danielbecerra_ajustes_estados_categorias'
+    - builder_table_update_danielbecerra_ajustes_estados_categorias_4.php

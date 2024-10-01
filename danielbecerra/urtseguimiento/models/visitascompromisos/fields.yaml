@@ -1,0 +1,49 @@
+fields:
+    visita:
+        label: Visita
+        select: "(select concat(s.nombre, ' ', v.fecha) from danielbecerra_urtseguimiento_visitas v join danielbecerra_urtseguimiento_sedes s on s.id = v.sede_id where v.id = danielbecerra_urtseguimiento_visitas.id)"
+        descriptionFrom: descripcion
+        list: $/danielbecerra/urtseguimiento/models/visitas/columns.yaml
+        span: auto
+        type: relation
+        readonly: true
+    item:
+        label: 'Item de chequeo'
+        type: relation
+        list: $/danielbecerra/urtseguimiento/models/visitaslistachequeo/columns.yaml
+        select: '(select nombre from danielbecerra_urtseguimiento_listachequeo_items where id = listachequeo_item_id)'
+        span: auto
+        scope: filterByVisita
+    seguimiento:
+        label: 'Seguimiento de visita'
+        select: created_at
+        descriptionFrom: description
+        span: auto
+        type: relation
+        scope: filterByVisita
+    estado:
+        label: Estado
+        select: nombre
+        descriptionFrom: description
+        span: auto
+        type: relation
+        conditions: 'estados_categorias_id = 2'
+    user:
+        label: Usuario
+        span: auto
+        readOnly: 0
+        type: recordfinder
+        prompt: 'Seleccione un usuario'
+        modelClass: Backend\Models\User
+        list: $/danielbecerra/urtseguimiento/models/user/columns.yaml
+        nameFrom: login
+        required: true
+    fecha:
+        label: Fecha de cumplimiento
+        span: auto
+        type: datepicker
+    compromiso:
+        label: Compromiso
+        size: huge
+        span: full
+        type: richeditor

@@ -1,0 +1,14 @@
+# ===================================
+#  Relation Behavior Configuration
+# ===================================
+
+items:
+    label: Lista Chequeo Items
+    view:
+        list: $/danielbecerra/urtseguimiento/models/listachequeoitems/columns.yaml
+        toolbarButtons: delete
+        showSearch: true
+    manage:
+        form: $/danielbecerra/urtseguimiento/models/listachequeoitems/fields.yaml
+        showSearch: true
+        showCheckboxes: true

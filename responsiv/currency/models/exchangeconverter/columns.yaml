@@ -1,0 +1,32 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: ID
+        invisible: true
+
+    name:
+        label: Name
+        searchable: true
+
+    converter_name:
+        label: Converter Name
+
+    fallback_converter:
+        label: Fallback
+        relation: fallback_converter
+        select: name
+        searchable: false
+        invisible: true
+
+    is_enabled:
+        label: Enabled
+        type: switch
+        width: 10%
+
+    is_default:
+        label: Default
+        type: switch
+        width: 10%

@@ -1,0 +1,13 @@
+scopes:
+    fecha:
+        label: Fecha de seguimiento
+        type: daterange
+        conditions:
+            from: created_at >= ':after'
+            to: created_at <= ':before'
+    user:
+        label: Usuario que creó el seguimiento
+        type: group
+        modelClass: Backend\Models\User
+        nameFrom: first_name
+        conditions: user_id = :value

@@ -1,0 +1,17 @@
+fields:
+    nombre:
+        label: Nombre
+        span: auto
+        type: text
+    parent:
+        label: 'Categoría Superior'
+        nameFrom: nombre
+        descriptionFrom: descripcion
+        list: $/danielbecerra/urtseguimiento/models/listachequeo/columns.yaml
+        span: auto
+        type: recordfinder
+    items:
+        label: Items de la Lista de Chequeo
+        type: partial
+        path: field_items
+        span: full

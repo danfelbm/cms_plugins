@@ -1,0 +1,75 @@
+tabs:
+    cssClass: display-control
+    fields:
+        section1:
+            label: Instrucciones
+            span: full
+            context:
+                - update
+                - preview
+            type: section
+            comment: 'Debes crear un seguimiento a la visita con el fin de poder añadir evaluaciones a los ítems de chequeo. Una visita puede tener varios seguimientos, para los cuales pueden existir varios compromisos.'
+            tab: 'danielbecerra.urtseguimiento::lang.tab_seguimientos'
+        seguimientos:
+            label: Seguimientos
+            span: full
+            path: visitas_seguimientos
+            context:
+                - update
+                - preview
+            type: partial
+            tab: 'danielbecerra.urtseguimiento::lang.tab_seguimientos'
+        visitasListaChequeo:
+            label: 'Items de la Lista de Chequeo'
+            span: full
+            path: visitas_listachequeo_items
+            context:
+                - update
+                - preview
+            type: partial
+            tab: 'danielbecerra.urtseguimiento::lang.tab_evaluaciones'
+        visitasCompromisos:
+            label: Compromisos
+            span: full
+            path: visitas_compromisos
+            context:
+                - update
+                - preview
+            type: partial
+            tab: 'danielbecerra.urtseguimiento::lang.tab_compromisos'
+fields:
+    sede:
+        label: Sede
+        nameFrom: nombre
+        descriptionFrom: direccion
+        list: $/danielbecerra/urtseguimiento/models/sedes/columns.yaml
+        span: auto
+        type: recordfinder
+        required: true
+    fecha:
+        label: Fecha
+        mode: datetime
+        span: auto
+        type: datepicker
+        required: true
+    user:
+        label: Usuario
+        span: auto
+        readOnly: 0
+        type: recordfinder
+        prompt: 'Seleccione un usuario'
+        modelClass: Backend\Models\User
+        list: $/danielbecerra/urtseguimiento/models/user/columns.yaml
+        nameFrom: login
+        required: true
+    listachequeo:
+        label: 'Lista de Categorías'
+        span: full
+        type: checkboxlist
+        options: getListaChequeoOptions
+        quickselect: 1
+        inlineOptions: 1
+        required: true
+        ignored: true
+        context:
+            - create

@@ -1,0 +1,10 @@
+name: Departamentos
+form: $/danielbecerra/ajustes/models/departamentos/fields.yaml
+modelClass: DanielBecerra\Ajustes\Models\Departamentos
+defaultRedirect: danielbecerra/ajustes/departamentos
+create:
+    redirect: 'danielbecerra/ajustes/departamentos/update/:id'
+    redirectClose: danielbecerra/ajustes/departamentos
+update:
+    redirect: danielbecerra/ajustes/departamentos
+    redirectClose: danielbecerra/ajustes/departamentos

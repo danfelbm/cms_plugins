@@ -1,0 +1,9 @@
+columns:
+    nombre:
+        label: nombre
+        type: text
+    parent:
+        label: categoria
+        type: text
+        select: nombre
+        relation: parent

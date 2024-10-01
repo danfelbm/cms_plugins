@@ -1,0 +1,10 @@
+name: Estados
+form: $/danielbecerra/ajustes/models/estados/fields.yaml
+modelClass: DanielBecerra\Ajustes\Models\Estados
+defaultRedirect: danielbecerra/ajustes/estados
+create:
+    redirect: 'danielbecerra/ajustes/estados/update/:id'
+    redirectClose: danielbecerra/ajustes/estados
+update:
+    redirect: danielbecerra/ajustes/estados
+    redirectClose: danielbecerra/ajustes/estados

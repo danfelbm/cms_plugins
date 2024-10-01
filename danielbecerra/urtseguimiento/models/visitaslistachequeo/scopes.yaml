@@ -1,0 +1,40 @@
+scopes:
+
+    visita:
+        label: Visita
+        modelClass: DanielBecerra\UrtSeguimiento\Models\Visitas
+        nameFrom: id
+        conditions: visita_id = :value
+        optionsMethod: getVisitasOptions
+
+    listachequeo_item:
+        label: Categoría
+        modelClass: DanielBecerra\UrtSeguimiento\Models\ListaChequeo
+        nameFrom: nombre
+        modelScope: filterByItemCategoria
+        #conditions: listachequeo_id = :value
+
+    resultado:
+        label: Resultado
+        modelClass: DanielBecerra\Ajustes\Models\Estados
+        nameFrom: nombre
+        conditions: resultado_id = :value
+        optionsMethod: getEstadosVisitasItemsChequeo
+
+    seguimiento:
+        label: Seguimiento
+        modelClass: DanielBecerra\UrtSeguimiento\Models\VisitasSeguimientos
+        nameFrom: fecha
+        conditions: seguimiento_id = :value
+        optionsMethod: getVisitasSeguimientosOptions
+        dependsOn: visita
+
+    created_at:
+        label: Fecha de creación
+        type: daterange
+        conditions: created_at >= ':input' AND created_at <= ':input'
+
+    updated_at:
+        label: Fecha de actualización
+        type: daterange
+        conditions: updated_at >= ':input' AND updated_at <= ':input'

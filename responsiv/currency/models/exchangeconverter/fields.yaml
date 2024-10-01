@@ -1,0 +1,34 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    name:
+        label: Name
+        commentAbove: Assign a name to this currency converter.
+        span: auto
+
+    fallback_converter:
+        label: Fallback Converter
+        commentAbove: Select a converter to use as a fallback if this one fails.
+        type: relation
+        emptyOption: "- none -"
+        span: auto
+
+    refresh_interval:
+        label: Update Interval
+        type: radio
+        inlineOptions: true
+
+    is_enabled:
+        label: Enabled
+        type: checkbox
+        default: true
+        comment: Disabled currency converters are not used to fetch rates.
+        span: auto
+
+    is_default:
+        label: Default
+        comment: Place a tick in this checkbox if you want to use this converter by default.
+        type: checkbox
+        span: auto

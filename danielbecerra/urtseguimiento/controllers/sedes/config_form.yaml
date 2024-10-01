@@ -1,0 +1,11 @@
+name: Sedes
+modelClass: DanielBecerra\UrtSeguimiento\Models\Sedes
+form: $/danielbecerra/urtseguimiento/models/sedes/fields.yaml
+defaultRedirect: danielbecerra/urtseguimiento/sedes
+create:
+    redirect: 'danielbecerra/urtseguimiento/sedes/update/:id'
+    redirectClose: danielbecerra/urtseguimiento/sedes
+update:
+    redirect: danielbecerra/urtseguimiento/sedes
+    redirectClose: danielbecerra/urtseguimiento/sedes
+preview: {  }

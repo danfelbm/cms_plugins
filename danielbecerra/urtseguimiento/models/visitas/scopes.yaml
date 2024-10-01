@@ -1,0 +1,19 @@
+scopes:
+    fecha:
+        label: Rango de fechas de visita
+        type: daterange
+        conditions:
+            from: fecha >= ':after'
+            to: fecha <= ':before'
+    sede:
+        label: Sede de la visita
+        type: group
+        modelClass: DanielBecerra\UrtSeguimiento\Models\Sedes
+        nameFrom: nombre
+        conditions: sede_id = :value
+    user:
+        label: Usuario que creó la visita
+        type: group
+        modelClass: Backend\Models\User
+        nameFrom: first_name
+        conditions: user_id = :value

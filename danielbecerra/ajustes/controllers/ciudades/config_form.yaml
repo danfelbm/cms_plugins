@@ -1,0 +1,11 @@
+name: Ciudades
+modelClass: DanielBecerra\Ajustes\Models\Ciudades
+form: $/danielbecerra/ajustes/models/ciudades/fields.yaml
+defaultRedirect: danielbecerra/ajustes/ciudades
+create:
+    redirect: 'danielbecerra/ajustes/ciudades/update/:id'
+    redirectClose: danielbecerra/ajustes/ciudades
+update:
+    redirect: danielbecerra/ajustes/ciudades
+    redirectClose: danielbecerra/ajustes/ciudades
+preview: {  }

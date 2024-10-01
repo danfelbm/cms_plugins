@@ -1,0 +1,14 @@
+# ===================================
+#  Relation Behavior Configuration
+# ===================================
+
+visitas:
+    label: Visitas
+    view:
+        list: $/danielbecerra/urtseguimiento/models/visitas/columns.yaml
+        toolbarButtons: create|delete
+        showSearch: true
+    manage:
+        form: $/danielbecerra/urtseguimiento/models/visitas/fields.yaml
+        showSearch: true
+        recordsPerPage: 10

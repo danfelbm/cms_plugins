@@ -1,0 +1,38 @@
+# ===================================
+#  Relation Behavior Configuration
+# ===================================
+
+visitasSeguimiento:
+    label: Visitas Seguimiento
+    view:
+        list: $/danielbecerra/urtseguimiento/models/visitasseguimientos/columns.yaml
+        toolbarButtons: create|delete
+        showSearch: true
+        filter: $/danielbecerra/urtseguimiento/models/visitasseguimientos/scopes.yaml
+    manage:
+        form: $/danielbecerra/urtseguimiento/models/visitasseguimientos/fields.yaml
+        showSearch: true
+        showCheckboxes: true
+
+visitasListaChequeo:
+    label: Visitas Lista Chequeo Items
+    view:
+        list: $/danielbecerra/urtseguimiento/models/visitaslistachequeo/columns.yaml
+        toolbarButtons: false
+        showSearch: true
+        filter: $/danielbecerra/urtseguimiento/models/visitaslistachequeo/scopes.yaml
+    manage:
+        form: $/danielbecerra/urtseguimiento/models/visitaslistachequeo/fields.yaml
+        showSearch: true
+        showCheckboxes: true
+
+visitasCompromisos:
+    label: Visitas Compromisos
+    view:
+        list: $/danielbecerra/urtseguimiento/models/visitascompromisos/columns.yaml
+        toolbarButtons: create|delete
+        showSearch: true
+    manage:
+        form: $/danielbecerra/urtseguimiento/models/visitascompromisos/fields.yaml
+        showSearch: true
+        showCheckboxes: true

@@ -1,0 +1,16 @@
+fields:
+    nombre:
+        label: Nombre
+        span: auto
+        type: text
+    descripcion:
+        label: Descripcion
+        span: auto
+        type: textarea
+    listachequeo:
+        label: Categoría
+        nameFrom: nombre
+        descriptionFrom: descripcion
+        list: $/danielbecerra/urtseguimiento/models/listachequeo/columns.yaml
+        span: auto
+        type: recordfinder

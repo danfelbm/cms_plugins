@@ -1,0 +1,20 @@
+list: $/danielbecerra/ajustes/models/estadoscategorias/columns.yaml
+modelClass: DanielBecerra\Ajustes\Models\EstadosCategorias
+title: EstadosCategorias
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'danielbecerra/ajustes/estadoscategorias/update/:id'
+recordSorting:
+    column: sort_order
+    direction: asc
+structure:
+    showTree: true
+    showReorder: true
+    maxDepth: 3
+    dragRow: false

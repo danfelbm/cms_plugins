@@ -1,0 +1,10 @@
+name: Visitas
+modelClass: DanielBecerra\UrtSeguimiento\Models\Visitas
+form: $/danielbecerra/urtseguimiento/models/visitas/fields.yaml
+defaultRedirect: danielbecerra/urtseguimiento/visitas
+create:
+    redirect: 'danielbecerra/urtseguimiento/visitas/update/:id'
+    redirectClose: danielbecerra/urtseguimiento/visitas
+update:
+    redirect: danielbecerra/urtseguimiento/visitas
+    redirectClose: danielbecerra/urtseguimiento/visitas

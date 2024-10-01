@@ -1,0 +1,28 @@
+plugin:
+    name: 'danielbecerra.ajustes::lang.plugin.name'
+    description: 'danielbecerra.ajustes::lang.plugin.description'
+    author: 'Daniel Becerra'
+    icon: oc-icon-cog
+    homepage: ''
+navigation:
+    main-menu-ajustes:
+        label: Configuración
+        url: /
+        icon: icon-life-ring
+        sideMenu:
+            side-menu-deptos:
+                label: Departamentos
+                url: danielbecerra/ajustes/departamentos
+                icon: icon-sitemap
+            side-menu-ciudades:
+                label: Ciudades
+                url: danielbecerra/ajustes/ciudades
+                icon: icon-map-marker
+            side-menu-item:
+                label: Estados
+                url: danielbecerra/ajustes/estados
+                icon: icon-qrcode
+permissions:
+    'Gestionar ajustes':
+        tab: 'Gestionar ajustes'
+        label: 'danielbecerra.ajustes::lang.gestionar_ajustes'

@@ -1,0 +1,23 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    from_currency_code:
+        label: From Currency
+        type: dropdown
+        span: auto
+
+    to_currency_code:
+        label: To Currency
+        type: dropdown
+        span: auto
+
+    converter:
+        label: Currency Converter
+        type: relation
+        emptyOption: "-- use default --"
+
+    rate_data:
+        label: Rate Data
+        type: relation

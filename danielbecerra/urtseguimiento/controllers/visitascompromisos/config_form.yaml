@@ -1,0 +1,10 @@
+name: VisitasCompromisos
+form: $/danielbecerra/urtseguimiento/models/visitascompromisos/fields.yaml
+modelClass: DanielBecerra\UrtSeguimiento\Models\VisitasCompromisos
+defaultRedirect: danielbecerra/urtseguimiento/visitascompromisos
+create:
+    redirect: 'danielbecerra/urtseguimiento/visitascompromisos/update/:id'
+    redirectClose: danielbecerra/urtseguimiento/visitascompromisos
+update:
+    redirect: danielbecerra/urtseguimiento/visitascompromisos
+    redirectClose: danielbecerra/urtseguimiento/visitascompromisos

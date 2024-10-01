@@ -1,0 +1,13 @@
+list: $/danielbecerra/urtseguimiento/models/visitasseguimientos/columns.yaml
+modelClass: DanielBecerra\UrtSeguimiento\Models\VisitasSeguimientos
+title: VisitasSeguimiento
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'danielbecerra/urtseguimiento/visitasseguimiento/update/:id'
+filter: $/danielbecerra/urtseguimiento/models/visitasseguimiento/scopes.yaml

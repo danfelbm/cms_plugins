@@ -1,0 +1,23 @@
+scopes:
+    sede:
+        label: Sede
+        conditions: sede_id = :input
+
+    visita:
+        label: Elegir visita
+        conditions: visita_id = :input
+
+    estado:
+        label: Estado
+        conditions: estado = :input
+
+    usuario:
+        label: Usuario
+        select: concat(first_name, ' ', last_name)
+        nameFrom: name
+        conditions: user_id = :input
+
+    fecha:
+        label: Fecha de cumplimiento
+        type: daterange
+        conditions: fecha >= ':after' AND fecha <= ':before'

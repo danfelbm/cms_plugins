@@ -1,0 +1,12 @@
+list: $/danielbecerra/urtseguimiento/models/sedes/columns.yaml
+modelClass: DanielBecerra\UrtSeguimiento\Models\Sedes
+title: Sedes
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'danielbecerra/urtseguimiento/sedes/update/:id'

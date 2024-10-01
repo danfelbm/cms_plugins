@@ -1,0 +1,23 @@
+fields:
+    nombre:
+        label: Nombre
+        span: auto
+        type: text
+    direccion:
+        label: Direccion
+        span: auto
+        type: text
+    departamento:
+        label: Departamento
+        nameFrom: nombre
+        descriptionFrom: descripcion
+        list: $/danielbecerra/ajustes/models/departamentos/columns.yaml
+        span: auto
+        type: recordfinder
+    ciudad:
+        label: Ciudad
+        nameFrom: nombre
+        descriptionFrom: descripcion
+        list: $/danielbecerra/ajustes/models/ciudades/columns.yaml
+        span: auto
+        type: recordfinder

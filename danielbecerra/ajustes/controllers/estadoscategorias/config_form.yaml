@@ -1,0 +1,10 @@
+name: EstadosCategorias
+form: $/danielbecerra/ajustes/models/estadoscategorias/fields.yaml
+modelClass: DanielBecerra\Ajustes\Models\EstadosCategorias
+defaultRedirect: danielbecerra/ajustes/estadoscategorias
+create:
+    redirect: 'danielbecerra/ajustes/estadoscategorias/update/:id'
+    redirectClose: danielbecerra/ajustes/estadoscategorias
+update:
+    redirect: danielbecerra/ajustes/estadoscategorias
+    redirectClose: danielbecerra/ajustes/estadoscategorias

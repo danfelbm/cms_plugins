@@ -1,0 +1,34 @@
+columns:
+    listachequeo_item:
+        label: Nombre de Item
+        type: text
+        select: nombre
+        relation: listachequeo_item
+    listachequeo:
+        label: 'Categoría'
+        select: (SELECT lc.nombre 
+         FROM danielbecerra_urtseguimiento_listachequeo lc
+         JOIN danielbecerra_urtseguimiento_listachequeo_items lci ON lc.id = lci.listachequeo_id
+         WHERE lci.id = danielbecerra_urtseguimiento_visitas_listachequeo.listachequeo_item_id)
+        relation: listachequeo_item
+    resultado:
+        label: Resultado
+        type: text
+        select: nombre
+        relation: resultado
+    observaciones:
+        label: Observaciones
+        type: text
+    seguimiento:
+        label: 'Seguimiento'
+        type: text
+        select: (SELECT vs.fecha 
+         FROM danielbecerra_urtseguimiento_visitas_seguimientos vs
+         WHERE vs.id = danielbecerra_urtseguimiento_visitas_listachequeo.seguimiento_id)
+        relation: seguimiento
+    created_at:
+        label: creado
+        type: datetime
+    updated_at:
+        label: actualizado
+        type: datetime

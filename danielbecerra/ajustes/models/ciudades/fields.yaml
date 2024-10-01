@@ -1,0 +1,12 @@
+fields:
+    departamento:
+        label: Departamento
+        nameFrom: nombre
+        descriptionFrom: descripcion
+        list: $/danielbecerra/ajustes/models/departamentos/columns.yaml
+        span: auto
+        type: recordfinder
+    nombre:
+        label: Nombre
+        span: auto
+        type: text

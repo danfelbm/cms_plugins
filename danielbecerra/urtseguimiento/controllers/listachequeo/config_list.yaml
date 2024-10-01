@@ -1,0 +1,20 @@
+title: ListaChequeo
+modelClass: DanielBecerra\UrtSeguimiento\Models\ListaChequeo
+list: $/danielbecerra/urtseguimiento/models/listachequeo/columns.yaml
+recordUrl: 'danielbecerra/urtseguimiento/listachequeo/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordSorting:
+    column: sort_order
+    direction: asc
+structure:
+    showTree: true
+    showReorder: true
+    maxDepth: 3
+    dragRow: false

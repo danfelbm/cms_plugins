@@ -1,0 +1,24 @@
+fields:
+    visita:
+        label: Visita
+        nameFrom: name
+        descriptionFrom: description
+        span: auto
+        select: "(select concat(s.nombre, ' ', v.fecha) from danielbecerra_urtseguimiento_visitas v join danielbecerra_urtseguimiento_sedes s on s.id = v.sede_id where v.id = danielbecerra_urtseguimiento_visitas.id)"
+        type: relation
+        disabled: true
+    user:
+        label: Usuario
+        span: auto
+        select: "concat(first_name, ' ', last_name)"
+        type: relation
+    fecha:
+        label: 'Fecha del seguimiento'
+        mode: datetime
+        span: auto
+        type: datepicker
+    observaciones:
+        label: Observaciones
+        size: huge
+        span: full
+        type: richeditor

@@ -1,0 +1,14 @@
+fields:
+    nombre:
+        label: Nombre
+        span: auto
+        type: text
+    descripcion:
+        label: Descripcion
+        span: auto
+        type: text
+    parent:
+        label: 'Categoría'
+        span: auto
+        type: relation
+        select: nombre

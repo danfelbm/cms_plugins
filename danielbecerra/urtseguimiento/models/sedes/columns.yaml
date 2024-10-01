@@ -1,0 +1,20 @@
+columns:
+    id:
+        label: id
+        type: number
+    nombre:
+        label: nombre
+        type: text
+    direccion:
+        label: direccion
+        type: text
+    ciudad:
+        label: ciudad
+        type: text
+        select: nombre
+        relation: ciudad
+    departamento:
+        label: departamento
+        type: text
+        select: nombre
+        relation: departamento

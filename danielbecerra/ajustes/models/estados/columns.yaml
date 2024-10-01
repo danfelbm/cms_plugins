@@ -1,0 +1,12 @@
+columns:
+    estados_categorias:
+        label: Categoría
+        type: number
+        select: nombre
+        relation: estados_categorias
+    nombre:
+        label: Nombre
+        type: text
+    descripcion:
+        label: descripcion
+        type: text

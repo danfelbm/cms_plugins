@@ -1,0 +1,12 @@
+list: $/danielbecerra/ajustes/models/ciudades/columns.yaml
+modelClass: DanielBecerra\Ajustes\Models\Ciudades
+title: Ciudades
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'danielbecerra/ajustes/ciudades/update/:id'

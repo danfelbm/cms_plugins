@@ -1,0 +1,10 @@
+name: ListaChequeo
+modelClass: DanielBecerra\UrtSeguimiento\Models\ListaChequeo
+form: $/danielbecerra/urtseguimiento/models/listachequeo/fields.yaml
+defaultRedirect: danielbecerra/urtseguimiento/listachequeo
+create:
+    redirect: 'danielbecerra/urtseguimiento/listachequeo/update/:id'
+    redirectClose: danielbecerra/urtseguimiento/listachequeo
+update:
+    redirect: danielbecerra/urtseguimiento/listachequeo
+    redirectClose: danielbecerra/urtseguimiento/listachequeo

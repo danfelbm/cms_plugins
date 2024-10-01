@@ -1,0 +1,12 @@
+columns:
+    nombre:
+        label: nombre
+        type: text
+    descripcion:
+        label: descripcion
+        type: text
+    listachequeo:
+        label: categoria
+        type: text
+        select: nombre
+        relation: listachequeo

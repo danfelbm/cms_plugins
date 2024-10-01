@@ -1,0 +1,13 @@
+list: $/danielbecerra/urtseguimiento/models/visitascompromisos/columns.yaml
+modelClass: DanielBecerra\UrtSeguimiento\Models\VisitasCompromisos
+title: VisitasCompromisos
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'danielbecerra/urtseguimiento/visitascompromisos/update/:id'
+filter: $/danielbecerra/urtseguimiento/models/visitascompromisos/scopes.yaml

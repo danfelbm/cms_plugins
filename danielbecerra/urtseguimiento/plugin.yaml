@@ -1,0 +1,38 @@
+plugin:
+    name: 'danielbecerra.urtseguimiento::lang.plugin.name'
+    description: 'danielbecerra.urtseguimiento::lang.plugin.description'
+    author: 'Daniel Becerra'
+    icon: oc-icon-train
+    homepage: ''
+permissions:
+    programar_visita:
+        tab: Visitas
+        label: 'danielbecerra.urtseguimiento::lang.programar_visita'
+    reasignar_visita:
+        tab: Visitas
+        label: 'danielbecerra.urtseguimiento::lang.reasignar_visita'
+    ver_lista_chequeo:
+        tab: Visitas
+        label: 'danielbecerra.urtseguimiento::lang.ver_lista_chequeo'
+navigation:
+    main-menu-item:
+        label: Visitas
+        url: /
+        icon: icon-life-ring
+        sideMenu:
+            menu-visitas:
+                label: Visitas
+                url: danielbecerra/urtseguimiento/visitas
+                icon: icon-sitemap
+            side-menu-compromisos:
+                label: Compromisos
+                url: danielbecerra/urtseguimiento/visitascompromisos
+                icon: icon-check-circle
+            side-menu-sedes:
+                label: Sedes
+                url: danielbecerra/urtseguimiento/sedes
+                icon: icon-building
+            side-menu-listachequeo:
+                label: 'Lista de chequeo'
+                url: danielbecerra/urtseguimiento/listachequeo
+                icon: icon-check-square

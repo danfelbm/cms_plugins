@@ -1,0 +1,10 @@
+fields:
+    user_id:
+        label: 'User id'
+        span: auto
+        type: number
+    comentario:
+        label: Comentario
+        size: huge
+        span: full
+        type: richeditor

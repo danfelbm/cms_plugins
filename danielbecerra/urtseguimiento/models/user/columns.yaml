@@ -1,0 +1,20 @@
+columns:
+    login:
+        label: 'Login'
+        searchable: true
+        sortable: true
+
+    email:
+        label: 'Email'
+        searchable: true
+        sortable: true
+
+    first_name:
+        label: 'First Name'
+        searchable: true
+        sortable: true
+
+    last_name:
+        label: 'Last Name'
+        searchable: true
+        sortable: true

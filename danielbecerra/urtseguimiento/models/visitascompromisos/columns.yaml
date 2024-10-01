@@ -1,0 +1,17 @@
+columns:
+    compromiso:
+        label: compromiso
+        type: text
+    estado:
+        label: estado
+        select: nombre
+        relation: estado
+        type: text
+    nombre_item:
+        label: 'Nombre del Item'
+        type: text
+    seguimiento:
+        label: 'Seguimiento'
+        type: text
+        select: fecha
+        relation: seguimiento
